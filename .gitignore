@@ -36,10 +36,36 @@ dags/portfolio/pf_qa_daily.py
 dags/portfolio/libs/qa_checks.py
 dags/portfolio/libs/minio_client.py
 dags/portfolio/libs/scraper_adapter.py
-dags/portfolio/pf_publish_daily.py
-dags/portfolio/pf_diff_daily.py
-dags/portfolio/pf_orchestrator_daily.py
-dags/portfolio/pf_etl_daily.py
-dags/portfolio/libs/diff_engine.py
-dags/portfolio/libs/etl_transforms.py
-# Scrapers and generic files remain, as they're reused or for visual portfolio value.
+
+# --- PRIVATE SCRAPERS PROTECTION ---
+# Exclude active production scrapers (keep only Falabella as design template)
+dags/itau_scraper.py
+dags/ripley_scraper.py
+dags/santander_scraper.py
+dags/bice_scraper.py
+dags/bci_scraper.py
+dags/scotia_scraper.py
+dags/cencosud_scraper.py
+dags/bancochile_scraper.py
+dags/internacional_scraper.py
+dags/run_bancoestado_local.py
+
+# Optional: exclude logs inside dags/ portfolio if any
+dags/*.log
+dags/*.txt
+
+# --- PORTFOLIO CLEANUP (REMOVING CLUTTER) ---
+# Exclude internal/migration-only notes
+ONBOARDING_SOURCE.md
+README_SOURCE.md
+docs/COPIED_FILES.md
+docs/DEV_HANDOFF.md
+
+# Exclude scraper-specific development changelogs and debugging logs
+dags/CHANGELOG_*.md
+dags/*_debug.log
+dags/*.log
+dags/json/
+dags/__pycache__/
+dags/portfolio/__pycache__/
+dags/portfolio/libs/__pycache__/
