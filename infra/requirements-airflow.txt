@@ -1,0 +1,18 @@
+apache-airflow-providers-postgres
+apache-airflow-providers-amazon  # Necesario para MinIO (usa protocolo S3)
+pandas
+selenium
+minio
+pyarrow
+duckdb
+psycopg2-binary
+curl_cffi==0.5.10
+beautifulsoup4
+lxml
+playwright
+playwright-stealth
+gspread
+oauth2client
+sqlalchemy
+google-genai
+pyTelegramBotAPI

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local runtime artifacts
+logs/
+plugins/
+*.log
+
+# Data / heavy artifacts
+*.duckdb
+*.png
+*.jpg
+*.jpeg
+*.html
+out.txt
+
+# Optional local raw outputs
+dags/json/
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+
+# Legacy Parquet exclusions (for Portfolio setup)
+dags/portfolio/pf_orchestrator_daily.py
+dags/portfolio/pf_etl_daily.py
+dags/portfolio/pf_diff_daily.py
+dags/portfolio/pf_publish_daily.py
+dags/portfolio/libs/diff_engine.py
+dags/portfolio/libs/etl_transforms.py
+dags/portfolio/pf_qa_daily.py
+dags/portfolio/libs/qa_checks.py
+dags/portfolio/libs/minio_client.py
+dags/portfolio/libs/scraper_adapter.py
+dags/portfolio/pf_publish_daily.py
+dags/portfolio/pf_diff_daily.py
+dags/portfolio/pf_orchestrator_daily.py
+dags/portfolio/pf_etl_daily.py
+dags/portfolio/libs/diff_engine.py
+dags/portfolio/libs/etl_transforms.py
+# Scrapers and generic files remain, as they're reused or for visual portfolio value.
