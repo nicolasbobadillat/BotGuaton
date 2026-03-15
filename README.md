@@ -1,7 +1,7 @@
 # Datitos Nam: BotGuaton
 
 Este proyecto es el motor de datos que alimenta a la cuenta de Instagram **@BotGuaton**, un sistema automatizado para encontrar descuentos y promociones en restaurantes y comida en Chile.
-
+https://www.instagram.com/botguaton/
 ---
 
 ## 1. El problema
@@ -42,7 +42,7 @@ Para asegurar que BotGuaton publique información 100% confiable antes de que ll
 
 ---
 
-## 🚀 Cómo Encender la Fábrica
+## 🚀 Cómo instalar
 
 1. **Desplegar Contenedores**:
    ```bash
